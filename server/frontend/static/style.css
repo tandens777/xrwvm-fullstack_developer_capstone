@@ -124,3 +124,59 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the entire section */
+    padding: 20px;
+    gap: 40px;
+    text-align: center; /* Ensures that the text inside the section is centered */
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center; /* Centers the icon inside its container */
+    align-items: center;
+    flex: 1;
+}
+
+.contact-icon img {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    border-radius: 50%;
+}
+
+.contact-info {
+    flex: 1; /* Makes the contact info section wider */
+    font-size: 1.2rem; /* Increased font size */
+    color: #333333;
+    text-align: left; /* Keeps the contact info aligned to the left */
+}
+
+.contact-info p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.contact-info strong {
+    color: #007acc;
+    font-size: 1.3rem; /* Increased font size for strong text */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers the contact-section container */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.divider {
+    border: none; /* Removes any default border */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: #04144265; /* Adjust the color to match your theme */
+    width: 100%; /* Set the width of the line */
+    margin: 20px auto; /* Center the line and add spacing above and below */
+
+}
