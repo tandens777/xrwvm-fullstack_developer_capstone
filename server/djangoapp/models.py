@@ -1,7 +1,6 @@
 # Uncomment the following imports before adding the Model code
 
 from django.db import models
-#from django.utils.timezone import now
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 
@@ -17,6 +16,7 @@ class CarMake(models.Model):
     description = models.TextField()
     # Other fields as needed
     country = models.TextField()
+
 
     def __str__(self):
         return self.name  # Return the name as the string representation
@@ -50,5 +50,7 @@ class CarModel(models.Model):
         ])
     # Other fields as needed
 
+
     def __str__(self):
         return self.name  # Return the name as the string representation
+
