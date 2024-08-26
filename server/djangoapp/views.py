@@ -102,7 +102,7 @@ def registration(request):
 # # Update the `get_dealerships` view to render the index page with
 # a list of dealerships
 # def get_dealerships(request):
-# Update the `get_dealerships` render list of dealerships all 
+# Update the `get_dealerships` render list of dealerships all
 # by default, particular state if state is passed
 def get_dealerships(request, state="All"):
     if (state == "All"):
@@ -146,9 +146,11 @@ def add_review(request):
     if (request.user.is_anonymous is False):
         data = json.loads(request.body)
         try:
-            # response = post_review(data)
+            response = post_review(data)
+            print(response)
             return JsonResponse({"status": 200})
         except Exception as e:
+            print(e)
             return JsonResponse(
                 {"status": 401, "message": "Error in posting review"}
             )
